@@ -3,7 +3,7 @@ import SectionKicker from './SectionKicker.jsx';
 
 export default function About() {
   return (
-    <section id="about" className="section pt-40">
+    <section id="about" className="section pt-24 sm:pt-32">
       <div className="grid items-center gap-12 lg:grid-cols-[0.95fr_1.05fr]">
         <div className="relative">
           <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1000&q=80" alt="Baker preparing fresh croissants" className="h-[28rem] w-full rounded-[2rem] object-cover shadow-soft" />

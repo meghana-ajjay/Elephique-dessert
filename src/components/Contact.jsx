@@ -168,25 +168,28 @@ ${formData.message}
       </div>
 
       {showPopup && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
-          <div className="w-[90%] max-w-md rounded-3xl bg-white p-6 text-center shadow-2xl">
-            <div className="mb-4 text-5xl">🎂</div>
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
+      <div className="w-[90%] max-w-md rounded-3xl bg-white p-6 text-center shadow-2xl">
+        <div className="mb-4 text-5xl">🎂</div>
 
-            <h3 className="mb-2 text-xl font-bold text-cocoa">
-              Inquiry Ready!
-            </h3>
+        <h3 className="mb-3 text-2xl font-bold text-cocoa">
+          Thank You for Your Inquiry!
+        </h3>
 
-            <p className="text-ink/70">
-              Your inquiry is ready.
-              <br />
-              WhatsApp will open shortly.
-              <br />
-              Please click <strong>Send</strong> in WhatsApp to complete your
-              order request.
-            </p>
-          </div>
+        <p className="leading-7 text-ink/70">
+          We're excited to help make your occasion sweeter.
+          <br /><br />
+          WhatsApp will open in a moment with your inquiry details.
+          Simply tap <strong>Send</strong> in WhatsApp and our team will get back
+          to you as soon as possible.
+        </p>
+
+        <div className="mt-5 rounded-2xl bg-gold/10 p-3 text-sm text-cocoa">
+          🍰 Custom Cakes • 🎉 Birthday Orders • 🎁 Dessert Boxes
         </div>
-      )}
+      </div>
+    </div>
+  )}
     </section>
   );
 }

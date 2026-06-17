@@ -21,8 +21,26 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 left-1/2 grid w-[min(92%,62rem)] -translate-x-1/2 translate-y-1/2 grid-cols-1 overflow-hidden rounded-[1.75rem] bg-ivory text-cocoa shadow-soft sm:grid-cols-3">
-        {[
+      <div
+        className="
+          absolute
+          bottom-0
+          left-1/2
+          grid
+          w-[min(92%,62rem)]
+          -translate-x-1/2
+          translate-y-[35%]
+          sm:translate-y-1/2
+          grid-cols-1
+          overflow-hidden
+          rounded-[1.75rem]
+          bg-ivory
+          text-cocoa
+          shadow-soft
+          sm:grid-cols-3
+        "
+      >
+              {[
           ['Mysore', 'Local dessert shop'],
           ['Fresh', 'Baked to order'],
           ['Custom', 'Cakes and hampers'],
