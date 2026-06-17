@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  background: #fbf7ef;
+}
+
+::selection {
+  background: #8b3f42;
+  color: #fffdf8;
+}
+
+@layer components {
+  .section {
+    @apply mx-auto max-w-7xl px-5 py-24 lg:px-8 lg:py-32;
+  }
+
+  .section-title {
+    @apply font-display text-4xl font-semibold leading-tight tracking-normal text-cocoa sm:text-6xl;
+  }
+
+  .nav-link {
+    @apply text-sm font-semibold text-cocoa/70 transition hover:text-rosewood;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gold px-7 py-4 font-bold text-cocoa shadow-glow transition hover:-translate-y-1 hover:bg-cream;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-full border border-cream/40 px-7 py-4 font-bold text-cream transition hover:-translate-y-1 hover:bg-cream hover:text-cocoa;
+  }
+
+  .field {
+    @apply block text-sm font-bold uppercase tracking-[0.16em] text-cocoa/60;
+  }
+
+  .field input,
+  .field textarea,
+  .field select {
+    @apply mt-2 w-full rounded-2xl border border-cocoa/10 bg-white px-4 py-4 text-base font-medium normal-case tracking-normal text-ink outline-none transition placeholder:text-ink/30 focus:border-rosewood focus:ring-4 focus:ring-rosewood/10;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
