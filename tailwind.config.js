@@ -8,17 +8,19 @@ export default {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       colors: {
-        cream: '#fbf7ef',
-        ivory: '#fffdf8',
-        cocoa: '#412d27',
-        rosewood: '#8b3f42',
-        pistachio: '#7d916a',
-        gold: '#c59b5b',
-        ink: '#201816',
+        cream: '#fbf6f2',
+        ivory: '#fffdf9',
+        blush: '#f5e3e2',
+        rose: '#a85662',
+        rosewood: '#8c4450',
+        cocoa: '#4a302d',
+        pistachio: '#849476',
+        gold: '#c69a5f',
+        ink: '#231918',
       },
       boxShadow: {
-        soft: '0 24px 80px rgba(65, 45, 39, 0.12)',
-        glow: '0 18px 50px rgba(197, 155, 91, 0.28)',
+        soft: '0 22px 70px rgba(74, 48, 45, 0.12)',
+        glow: '0 16px 45px rgba(198, 154, 95, 0.28)',
       },
       keyframes: {
         fadeUp: {

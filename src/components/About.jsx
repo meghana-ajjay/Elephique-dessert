@@ -1,24 +1,45 @@
-import { ChefHat, Clock3, Heart } from 'lucide-react';
+import { Heart, MapPin, Sparkles, HeartHandshake } from 'lucide-react';
 import SectionKicker from './SectionKicker.jsx';
 
 export default function About() {
   return (
-    <section id="about" className="section pt-24 sm:pt-32">
-      <div className="grid items-center gap-12 lg:grid-cols-[0.95fr_1.05fr]">
+    <section id="about us" className="section">
+      <div className="grid items-center gap-14 lg:grid-cols-[0.95fr_1.05fr] lg:gap-20">
         <div className="relative">
-          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1000&q=80" alt="Baker preparing fresh croissants" className="h-[28rem] w-full rounded-[2rem] object-cover shadow-soft" />
-          <div className="absolute -bottom-8 right-5 max-w-xs rounded-3xl bg-ivory p-6 shadow-soft sm:right-10">
-            <ChefHat className="mb-3 text-rosewood" size={28} />
-            <p className="font-display text-2xl font-semibold text-cocoa">Premium cakes and desserts made for Mysore celebrations.</p>
+          <img
+            src="https://images.pexels.com/photos/33100288/pexels-photo-33100288.jpeg"
+            alt="Pastry chef carefully finishing a handcrafted dessert"
+            className="aspect-[4/5] w-full rounded-lg object-cover shadow-soft"
+          />
+          <div className="absolute bottom-5 left-5 right-5 rounded-lg border border-white/30 bg-ivory/95 p-5 shadow-soft backdrop-blur sm:bottom-8 sm:left-auto sm:right-[-1.5rem] sm:max-w-xs sm:p-7">
+            <div className="mb-4 flex items-center gap-3 text-rose">
+              <HeartHandshake size={25} />
+              <span className="text-xs font-bold uppercase tracking-[0.2em]">OUR PROMISE</span>
+            </div>
+            <h3 className="font-display text-3xl font-semibold text-cocoa">Quality in Every Creation</h3>
+            <p className="mt-2 leading-7 text-ink/65">Thoughtfully crafted desserts made with care, creativity, and attention to every detail.</p>
           </div>
         </div>
-        <div className="lg:pl-8">
-          <SectionKicker text="About the bakery" />
-          <h2 className="section-title">A local dessert studio with a premium, artful finish.</h2>
-          <p className="mt-6 text-lg leading-8 text-ink/70">Elephique brings elegant baking to Mysore with cakes, pastries, brownies, hampers, and dessert tables made for birthdays, weddings, gifting, and everyday cravings. The brand style is refined, warm, and memorable.</p>
-          <div className="mt-8 grid gap-4 sm:grid-cols-2">
-            <Feature icon={<Heart size={21} />} title="Occasion ready" text="Custom cakes and dessert boxes for birthdays, engagements, events, and gifting." />
-            <Feature icon={<Clock3 size={21} />} title="Made fresh" text="Small-batch baking with careful finishing, timely pickup, and local delivery options." />
+
+        <div>
+          <SectionKicker text="About Us" />
+          <h2 className="section-title">From International Experience to Heartfelt Creations in Mysore</h2>
+          <div className="mt-7 space-y-5 text-base leading-8 text-ink/68 sm:text-lg">
+            <p>
+              Elephique was born from a dream to bring world-class dessert craftsmanship to Mysore. After years of gaining international baking experience in Muscat, our vision to create handcrafted desserts that turn everyday moments into lasting memories
+            </p>
+            <p>
+              From elegant celebration cakes to indulgent desserts, every creation is made in small batches with carefully chosen ingredients, refined techniques, and genuine care. By blending global expertise with local warmth, Elephique delivers desserts that are not only beautiful to look at but unforgettable to taste.
+            </p>
+            {/* <p>
+              Today, Elephique blends global dessert craftsmanship with familiar local flavours. Every cake, cookie and dessert is handcrafted in small batches, with thoughtful ingredients and an unmistakably personal touch.
+            </p> */}
+          </div>
+
+          <div className="mt-9 grid gap-4 sm:grid-cols-3">
+            <StoryPoint icon={<Sparkles size={20} />} title="Global craft" />
+            <StoryPoint icon={<Heart size={20} />} title="Made with feeling" />
+            <StoryPoint icon={<MapPin size={20} />} title="Rooted in Mysore" />
           </div>
         </div>
       </div>
@@ -26,12 +47,11 @@ export default function About() {
   );
 }
 
-function Feature({ icon, title, text }) {
+function StoryPoint({ icon, title }) {
   return (
-    <div className="rounded-2xl border border-cocoa/10 bg-ivory p-5">
-      <div className="mb-4 grid h-11 w-11 place-items-center rounded-full bg-rosewood/10 text-rosewood">{icon}</div>
-      <h3 className="font-display text-2xl font-semibold text-cocoa">{title}</h3>
-      <p className="mt-2 leading-7 text-ink/60">{text}</p>
+    <div className="flex items-center gap-3 border-t border-cocoa/15 pt-4 text-cocoa">
+      <span className="text-rose">{icon}</span>
+      <span className="font-semibold">{title}</span>
     </div>
   );
 }

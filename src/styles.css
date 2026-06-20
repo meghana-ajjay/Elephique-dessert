@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,48 +6,75 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
 body {
   margin: 0;
+  min-width: 320px;
+  background: #fbf6f2;
+  color: #231918;
   font-family: Inter, ui-sans-serif, system-ui, sans-serif;
-  background: #fbf7ef;
+  letter-spacing: 0;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
 }
 
 ::selection {
-  background: #8b3f42;
-  color: #fffdf8;
+  background: #a85662;
+  color: #fffdf9;
 }
 
 @layer components {
   .section {
-    @apply mx-auto max-w-7xl px-5 py-24 lg:px-8 lg:py-32;
+    @apply mx-auto max-w-7xl px-5 py-20 sm:py-24 lg:px-8 lg:py-28;
   }
 
   .section-title {
-    @apply font-display text-4xl font-semibold leading-tight tracking-normal text-cocoa sm:text-6xl;
+    @apply font-display text-4xl font-semibold leading-[1.05] text-cocoa sm:text-6xl;
   }
 
   .nav-link {
-    @apply text-sm font-semibold text-cocoa/70 transition hover:text-rosewood;
+    @apply text-sm font-semibold text-cocoa/70 transition hover:text-rose;
+  }
+
+  .icon-button {
+    @apply grid h-11 w-11 shrink-0 place-items-center rounded-full border border-cocoa/15 bg-white/70 text-cocoa transition hover:bg-blush;
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gold px-7 py-4 font-bold text-cocoa shadow-glow transition hover:-translate-y-1 hover:bg-cream;
+    @apply inline-flex min-h-14 items-center justify-center gap-2 rounded-full bg-gold px-7 py-4 font-bold text-cocoa shadow-glow transition hover:-translate-y-1 hover:bg-ivory;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center rounded-full border border-cream/40 px-7 py-4 font-bold text-cream transition hover:-translate-y-1 hover:bg-cream hover:text-cocoa;
+    @apply inline-flex min-h-14 items-center justify-center gap-2 rounded-full border border-ivory/45 bg-ivory/5 px-7 py-4 font-bold text-ivory backdrop-blur transition hover:-translate-y-1 hover:bg-ivory hover:text-cocoa;
+  }
+
+  .product-card {
+    @apply overflow-hidden rounded-lg border border-cocoa/10 bg-ivory shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-soft;
   }
 
   .field {
-    @apply block text-sm font-bold uppercase tracking-[0.16em] text-cocoa/60;
+    @apply block text-sm font-bold uppercase tracking-[0.14em] text-cocoa/60;
   }
 
   .field input,
   .field textarea,
   .field select {
-    @apply mt-2 w-full rounded-2xl border border-cocoa/10 bg-white px-4 py-4 text-base font-medium normal-case tracking-normal text-ink outline-none transition placeholder:text-ink/30 focus:border-rosewood focus:ring-4 focus:ring-rosewood/10;
+    @apply mt-2 w-full rounded-lg border border-cocoa/10 bg-ivory px-4 py-4 text-base font-medium normal-case tracking-normal text-ink outline-none transition placeholder:text-ink/30 focus:border-rose focus:ring-4 focus:ring-rose/10;
+  }
+}
+
+@media (max-width: 639px) {
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
   }
 }
 

@@ -1,24 +1,52 @@
+import { useState } from 'react';
+import { ArrowUpRight } from 'lucide-react';
 import SectionKicker from './SectionKicker.jsx';
-import { menuItems } from '../data/content.js';
+import { productCategories } from '../data/content.js';
 
 export default function MenuSection() {
+  const [activeCategory, setActiveCategory] = useState(productCategories[0].id);
+  const selected = productCategories.find((category) => category.id === activeCategory);
+
   return (
-    <section id="menu" className="section bg-ivory">
+    <section id="menu" className="section">
       <div className="mx-auto max-w-3xl text-center">
-        <SectionKicker text="Menu highlights" />
-        <h2 className="section-title">Client-ready menu ideas for cakes, bakes, and dessert boxes.</h2>
+        <SectionKicker text="The Elephique Menu" />
+        <h2 className="section-title">Beautifully made for every kind of craving.</h2>
+        <p className="mt-5 leading-7 text-ink/65">Explore our handcrafted collections. Product photographs are placeholders ready to be replaced with Elephique&apos;s original creations.</p>
       </div>
-      <div className="mt-12 grid gap-5 md:grid-cols-2">
-        {menuItems.map((item) => (
-          <article key={item.name} className="group rounded-[1.5rem] border border-cocoa/10 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-soft">
-            <div className="flex items-start justify-between gap-5">
-              <div>
-                <span className="rounded-full bg-pistachio/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-pistachio">{item.tag}</span>
-                <h3 className="mt-4 font-display text-3xl font-semibold text-cocoa">{item.name}</h3>
-              </div>
-              <span className="font-display text-3xl font-semibold text-rosewood">{item.price}</span>
+
+      <div className="mt-10 flex gap-2 overflow-x-auto pb-3" role="tablist" aria-label="Menu categories">
+        {productCategories.map((category) => (
+          <button
+            key={category.id}
+            type="button"
+            role="tab"
+            aria-selected={activeCategory === category.id}
+            onClick={() => setActiveCategory(category.id)}
+            className={`shrink-0 rounded-full border px-5 py-3 text-sm font-bold transition ${
+              activeCategory === category.id
+                ? 'border-cocoa bg-cocoa text-ivory shadow-soft'
+                : 'border-cocoa/15 bg-ivory text-cocoa hover:border-rose/40 hover:bg-blush'
+            }`}
+          >
+            {category.label}
+          </button>
+        ))}
+      </div>
+
+      <div className="mt-7 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        {selected.products.map((product) => (
+          <article key={product.name} className="product-card group">
+            <div className="aspect-[4/3] overflow-hidden bg-blush">
+              <img src={product.image} alt={product.name} className="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
             </div>
-            <p className="mt-4 leading-7 text-ink/60">{item.desc}</p>
+            <div className="flex min-h-[10.5rem] flex-col p-5">
+              <div className="flex items-start justify-between gap-3">
+                <h3 className="font-display text-2xl font-semibold leading-tight text-cocoa">{product.name}</h3>
+                <ArrowUpRight size={19} className="mt-1 shrink-0 text-gold transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+              </div>
+              <p className="mt-3 text-sm leading-6 text-ink/60">{product.description}</p>
+            </div>
           </article>
         ))}
       </div>
