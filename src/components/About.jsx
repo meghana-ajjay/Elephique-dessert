@@ -26,14 +26,14 @@ export default function About() {
           <h2 className="section-title">From International Experience to Heartfelt Creations in Mysore</h2>
           <div className="mt-7 space-y-5 text-base leading-8 text-ink/68 sm:text-lg">
             <p>
-              Elephique was born from a dream to bring world-class dessert craftsmanship to Mysore. After years of gaining international baking experience in Muscat, our vision to create handcrafted desserts that turn everyday moments into lasting memories
+              Elephique is a cloud bakery inspired by a passion for exceptional baking, artistic craftsmanship, and memorable celebrations. Drawing from international pastry traditions and years of experience in luxury hospitality and fine dining, including renowned establishments in Muscat, we create desserts that blend elegance, flavor, and creativity.
             </p>
             <p>
-              From elegant celebration cakes to indulgent desserts, every creation is made in small batches with carefully chosen ingredients, refined techniques, and genuine care. By blending global expertise with local warmth, Elephique delivers desserts that are not only beautiful to look at but unforgettable to taste.
+              Rooted in the warmth and heritage of Mysore, Elephique brings together global expertise and heartfelt hospitality. From handcrafted celebration cakes and artisanal pastries to signature desserts, every creation is thoughtfully prepared in small batches using carefully selected ingredients and refined techniques.
             </p>
-            {/* <p>
-              Today, Elephique blends global dessert craftsmanship with familiar local flavours. Every cake, cookie and dessert is handcrafted in small batches, with thoughtful ingredients and an unmistakably personal touch.
-            </p> */}
+            <p>
+              At Elephique, we believe every dessert should be as memorable as the occasion it celebrates.
+            </p>
           </div>
 
           <div className="mt-9 grid gap-4 sm:grid-cols-3">

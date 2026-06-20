@@ -50,7 +50,7 @@ backgroundPosition: 'center',
         <div className="mt-6 flex gap-4">
 
           <a
-            href="https://instagram.com/elephique.mysore"
+            href="@elephique_bake_mysore"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full border border-ivory/20 p-3 text-ivory transition hover:border-gold hover:text-gold"
@@ -138,11 +138,11 @@ backgroundPosition: 'center',
           </a>
 
           <a
-            href="mailto:hello@elephique.com"
+            href="mailto:elephique.mysore@gmail.com"
             className="flex gap-3 hover:text-gold transition"
           >
             <Mail size={18} className="shrink-0 text-gold" />
-            hello@elephique.com
+            elephique.mysore@gmail.com
           </a>
 
         </div>

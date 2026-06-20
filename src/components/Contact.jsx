@@ -65,7 +65,7 @@ ${formData.message}
             <ContactLine icon={<Mail size={20} />} text="Elephique.mysore@gmail.com" />
             <ContactLine
               icon={<FaInstagram size={20} />}
-              text="@elephique.mysore"
+              text="@elephique_bake_mysore"
             />
           </div>
         </div>

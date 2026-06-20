@@ -10,7 +10,7 @@ export default function Gallery() {
           <SectionKicker text="Gallery" />
           <h2 className="section-title">A little glimpse into our sweet world.</h2>
         </div>
-        <a href="https://instagram.com/" className="inline-flex items-center gap-2 font-bold text-rose transition hover:text-cocoa">
+        <a href="@elephique_bake_mysore" className="inline-flex items-center gap-2 font-bold text-rose transition hover:text-cocoa">
           View on Instagram <ArrowUpRight size={18} />
         </a>
       </div>
