@@ -30,6 +30,7 @@ import d3 from '../assets/d3.jpeg';
 import d4 from '../assets/d4.jpeg';
 import d5 from '../assets/d5.jpeg';
 import d6 from '../assets/d6.jpeg';
+import tiraMysore from '../assets/tira-mysore.jpeg';
 
 
 export const navItems = ['Home', 'About Us', 'Special Recepie', 'Menu', 'Gallery', 'Location', 'Contact'];
@@ -75,6 +76,9 @@ const images = {
     d5,
     d6,
   ],
+  tiraMysore: [
+    tiraMysore,
+  ]
 };
 
 const makeProducts = (products, imageSet) =>
@@ -144,7 +148,6 @@ export const productCategories = [
     label: 'Desserts',
     products: makeProducts(
       [
-        ['Japanese Souffle Cheesecake', 'Cloud-light cheesecake with a delicate jiggle and subtle sweetness.'],
         ['Fudge Brownie', 'Dense Belgian chocolate brownie with a signature crackled top.'],
         ['Saffron Tres Leches', 'Milk-soaked sponge perfumed with saffron and finished with cream.'],
         ['Dates Cake Pudding', 'Warm date cake with a luscious caramel-style sauce.'],
@@ -161,7 +164,7 @@ export const galleryGroups = [
   { label: 'Cupcakes', image: images.cupcake[0], className: '' },
   { label: 'Cookies', image: images.cookie[0], className: '' },
   { label: 'Desserts', image: images.dessert[0], className: 'md:col-span-2' },
-  { label: 'Signature Tira-Mysore', image: images.cake[2], className: '' },
+  { label: 'Signature Tira-Mysore', image: images.tiraMysore, className: '' },
 ];
 
 export const testimonials = [

@@ -1,7 +1,6 @@
 import {
 FaInstagram,
 FaWhatsapp,
-FaFacebookF,
 } from 'react-icons/fa';
 
 import {
@@ -42,10 +41,12 @@ backgroundPosition: 'center',
           </h3>
         </div>
 
-        <p className="mt-5 leading-8 text-ivory/75">
-          Premium cakes, pastries, cookies and desserts handcrafted
-          with passion, creativity and exceptional attention to detail.
-        </p>
+        <div className="mt-5 leading-8 text-ivory/75">
+          <div>Artisan Cakes</div>
+          <div>Pastries</div>
+          <div>Desserts</div>
+          <div>Custom Orders</div>
+        </div>
 
         <div className="mt-6 flex gap-4">
 
@@ -65,13 +66,6 @@ backgroundPosition: 'center',
             className="rounded-full border border-ivory/20 p-3 text-ivory transition hover:border-gold hover:text-gold"
           >
             <FaWhatsapp size={18} />
-          </a>
-
-          <a
-            href="#"
-            className="rounded-full border border-ivory/20 p-3 text-ivory transition hover:border-gold hover:text-gold"
-          >
-            <FaFacebookF size={18} />
           </a>
 
         </div>
@@ -181,7 +175,7 @@ backgroundPosition: 'center',
         </p>
 
         <p className="font-display text-lg text-gold">
-          Where Desserts Become Art
+          Serving Mysore & Nearby Areas
         </p>
 
         <div className="flex justify-center gap-6">

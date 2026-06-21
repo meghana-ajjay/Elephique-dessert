@@ -1,10 +1,12 @@
 import { ArrowDown, ArrowRight, MessageCircle, Cake } from 'lucide-react';
+import Logo from '../assets/Logo.jpeg';
+import HeroCake from '../assets/HeroCake.avif';
 
 export default function Hero() {
   return (
     <section id="home" className="relative flex min-h-[92svh] items-end overflow-hidden bg-cocoa pt-[4.75rem] text-ivory">
       <img
-        src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1800&q=90"
+        src={HeroCake}
         alt="Luxury handcrafted celebration cake"
         className="absolute inset-0 h-full w-full object-cover object-center"
       />
@@ -19,7 +21,7 @@ export default function Hero() {
           </div>
           <div className="mb-6 flex items-center gap-4">
             <img
-              src="/elephique-logo.jpeg"
+              src={Logo}
               alt="Elephique Logo"
               className="h-14 w-14 rounded-full border border-gold/40 object-cover bg-white"
             />
@@ -27,8 +29,8 @@ export default function Hero() {
               ELEPHIQUE
             </p>
           </div>
-          <h1 className="font-display text-5xl font-semibold leading-[0.98] sm:text-7xl lg:text-[5.5rem]">
-            WHERE DESSERTS BECOME ART.
+          <h1 className="font-display text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
+            FROM OUR OVEN TO YOUR MOMENTS OF JOY
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-7 text-ivory/85 sm:text-xl sm:leading-8">
             Premium cakes, cupcakes, cookies and desserts baked fresh in Mysore for every celebration.

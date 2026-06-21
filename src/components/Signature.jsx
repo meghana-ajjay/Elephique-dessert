@@ -1,6 +1,6 @@
 import { Crown, MessageCircle, Sparkles } from 'lucide-react';
 import SectionKicker from './SectionKicker.jsx';
-import cake3 from '../assets/cake3.jpeg';
+import tiraMysore from '../assets/tira-mysore.jpeg';
 
 export default function Signature() {
   return (
@@ -8,7 +8,7 @@ export default function Signature() {
       <div className="mx-auto grid max-w-7xl items-stretch lg:grid-cols-2">
         <div className="relative min-h-[28rem] overflow-hidden lg:min-h-[42rem]">
           <img
-            src={cake3}
+            src={tiraMysore}
             alt="Tira-Mysore signature dessert"
             className="absolute inset-0 h-full w-full object-cover transition duration-700 hover:scale-105"
           />

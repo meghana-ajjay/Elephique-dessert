@@ -1,5 +1,6 @@
 import { Heart, MapPin, Sparkles, HeartHandshake } from 'lucide-react';
 import SectionKicker from './SectionKicker.jsx';
+import AboutImg from '../assets/AboutImg.avif';
 
 export default function About() {
   return (
@@ -7,7 +8,7 @@ export default function About() {
       <div className="grid items-center gap-14 lg:grid-cols-[0.95fr_1.05fr] lg:gap-20">
         <div className="relative">
           <img
-            src="https://images.pexels.com/photos/33100288/pexels-photo-33100288.jpeg"
+            src={AboutImg}
             alt="Pastry chef carefully finishing a handcrafted dessert"
             className="aspect-[4/5] w-full rounded-lg object-cover shadow-soft"
           />
@@ -23,7 +24,7 @@ export default function About() {
 
         <div>
           <SectionKicker text="About Us" />
-          <h2 className="section-title">From International Experience to Heartfelt Creations in Mysore</h2>
+          <h2 className="section-title">Inspired By Global Expertise. Crafted For Mysore.</h2>
           <div className="mt-7 space-y-5 text-base leading-8 text-ink/68 sm:text-lg">
             <p>
               Elephique is a cloud bakery inspired by a passion for exceptional baking, artistic craftsmanship, and memorable celebrations. Drawing from international pastry traditions and years of experience in luxury hospitality and fine dining, including renowned establishments in Muscat, we create desserts that blend elegance, flavor, and creativity.

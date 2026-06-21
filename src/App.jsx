@@ -20,9 +20,9 @@ export default function App() {
       <Hero />
       <About />
       <Signature />
+      <WhyChooseUs />
       <MenuSection />
       <Gallery />
-      <WhyChooseUs />
       {/* <Testimonials /> */}
       <ChefSection/>
       <Instagram />

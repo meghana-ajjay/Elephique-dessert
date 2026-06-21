@@ -1,5 +1,6 @@
 import { Award, ChefHat, Star } from 'lucide-react';
 import SectionKicker from './SectionKicker.jsx';
+import chef from '../assets/chef.jpg';
 
 export default function ChefSection() {
   return (
@@ -25,7 +26,7 @@ export default function ChefSection() {
             {/* Chef Image */}
             <div className="mx-auto">
               <img
-                src="https://images.pexels.com/photos/27101539/pexels-photo-27101539.jpeg"
+                src={chef}
                 alt="Pastry Chef"
                 className="h-80 w-80 rounded-3xl object-cover"
                 />
@@ -45,43 +46,68 @@ export default function ChefSection() {
               </p>
 
               <p className="mt-6 leading-8 text-ivory/75">
-                A passionate Bakery & Pastry Chef with experience across luxury
-                hospitality and fine dining environments. Having worked with
-                renowned brands including Club Mahindra Resorts, Radisson Blu
-                Hotels, Organic Café, and Kaia Restaurant in Muscat, she brings
-                a wealth of expertise in pastry arts and dessert innovation.
-              </p>
+                With experience across luxury hospitality and fine dining establishments in India and Muscat, Chef Jayashree brings refined pastry techniques, creative artistry, and a passion for exceptional desserts to every Elephique creation.
+                </p>
+              <div className="mt-8">
+                <h4 className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-gold">
+                    Experience & Expertise
+                </h4>
 
-              <p className="mt-4 leading-8 text-ivory/75">
-                Specializing in artisan breads, handcrafted pastries,
-                celebration cakes, plated desserts, menu development, and
-                creative dessert concepts, she combines technical precision with
-                artistic creativity to craft desserts that delight every guest.
-              </p>
+                <div className="flex flex-wrap gap-3">
 
-              <div className="mt-8 grid gap-4 sm:grid-cols-2">
-                <div className="rounded-xl border border-ivory/10 p-4">
-                  <Award className="text-gold" size={24} />
-                  <h4 className="mt-3 font-semibold">
-                    Luxury Hospitality Experience
-                  </h4>
-                  <p className="mt-2 text-sm text-ivory/60">
-                    Experience across premium resorts, hotels, and fine dining
-                    establishments.
-                  </p>
+                    <span className="rounded-full border border-gold/30 bg-gold/10 px-4 py-2 text-sm font-medium">
+                    Club Mahindra Resorts
+                    </span>
+
+                    <span className="rounded-full border border-gold/30 bg-gold/10 px-4 py-2 text-sm font-medium">
+                    Radisson Blu Hotels
+                    </span>
+
+                    <span className="rounded-full border border-gold/30 bg-gold/10 px-4 py-2 text-sm font-medium">
+                    Kaia Restaurant, Muscat
+                    </span>
+
+                    <span className="rounded-full border border-gold/30 bg-gold/10 px-4 py-2 text-sm font-medium">
+                    Organic Café
+                    </span>
+
+                    <span className="rounded-full border border-ivory/20 bg-ivory/5 px-4 py-2 text-sm font-medium">
+                    Artisan Breads
+                    </span>
+
+                    <span className="rounded-full border border-ivory/20 bg-ivory/5 px-4 py-2 text-sm font-medium">
+                    Pastry Arts
+                    </span>
+
+                    <span className="rounded-full border border-ivory/20 bg-ivory/5 px-4 py-2 text-sm font-medium">
+                    Celebration Cakes
+                    </span>
+
+                    <span className="rounded-full border border-ivory/20 bg-ivory/5 px-4 py-2 text-sm font-medium">
+                    Menu Development
+                    </span>
+
+                    <span className="rounded-full border border-ivory/20 bg-ivory/5 px-4 py-2 text-sm font-medium">
+                    Dessert Innovation
+                    </span>
                 </div>
+                <div className="mt-8 grid grid-cols-3 gap-4">
+                    <div className="rounded-xl border border-ivory/10 p-4 text-center">
+                        <p className="font-display text-3xl text-gold">4+</p>
+                        <p className="text-sm text-ivory/60">Luxury Brands</p>
+                    </div>
 
-                <div className="rounded-xl border border-ivory/10 p-4">
-                  <Star className="text-gold" size={24} />
-                  <h4 className="mt-3 font-semibold">
-                    Signature Dessert Creation
-                  </h4>
-                  <p className="mt-2 text-sm text-ivory/60">
-                    Expert in artisan baking, pastry techniques, and innovative
-                    dessert development.
-                  </p>
+                    <div className="rounded-xl border border-ivory/10 p-4 text-center">
+                        <p className="font-display text-3xl text-gold">100+</p>
+                        <p className="text-sm text-ivory/60">Dessert Creations</p>
+                    </div>
+
+                    <div className="rounded-xl border border-ivory/10 p-4 text-center">
+                        <p className="font-display text-3xl text-gold">Global</p>
+                        <p className="text-sm text-ivory/60">Experience</p>
+                    </div>
+                    </div>
                 </div>
-              </div>
             </div>
 
           </div>

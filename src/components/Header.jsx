@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Menu, MessageCircle, X } from 'lucide-react';
 import { navItems } from '../data/content.js';
+import Logo from '../assets/Logo.jpeg'
 import WhatsAppButton from './WhatsAppButton.jsx';
 
 export default function Header() {
@@ -34,7 +35,7 @@ export default function Header() {
           onClick={() => setOpen(false)}
         >
           <img
-            src="/elephique-logo.jpeg"
+            src={Logo}
             alt="Elephique logo"
             className="h-11 w-11 rounded-full border border-gold/40 object-cover"
           />

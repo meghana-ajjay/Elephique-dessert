@@ -10,8 +10,8 @@ export default function Instagram() {
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
             <SectionKicker text="Instagram" />
-            <h2 className="section-title">Follow Our Sweet Journey</h2>
-            <p className="mt-4 text-ink/60">@elephique_bake_mysore</p>
+            <h2 className="section-title">@elephique_bake_mysore</h2>
+            {/* <p className="mt-4 text-ink/60">@elephique_bake_mysore</p> */}
           </div>
           <a href="https://instagram.com/" className="inline-flex items-center justify-center gap-2 rounded-full bg-rose px-6 py-4 font-bold text-white transition hover:-translate-y-1 hover:bg-cocoa">
             <FaInstagram size={19} /> Follow on Instagram
