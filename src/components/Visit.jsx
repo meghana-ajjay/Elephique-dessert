@@ -24,7 +24,7 @@ return ( <section id="location" className="section"> <div className="grid overfl
             className="shrink-0 text-rose"
             size={21}
           />
-          <span>Mysore, Karnataka</span>
+          <span>Chamundeshwari railway layout, krs road, Mysuru</span>
         </div>
 
         <div className="flex gap-3 text-cocoa">
@@ -52,7 +52,7 @@ return ( <section id="location" className="section"> <div className="grid overfl
     <div className="min-h-[22rem]">
       <iframe
         title="Elephique Location"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124741.54700486285!2d76.56962622739461!3d12.304110612414942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf70381d572ef9%3A0x2b89ece8c0f8396d!2sMysuru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1782047183546!5m2!1sen!2sin"
+        src="https://maps.google.com/maps?q=Chamundeshwari%20Railway%20Layout%20KRS%20Road%20Mysuru%20570016&t=&z=15&ie=UTF8&iwloc=&output=embed"
         width="100%"
         height="100%"
         className="h-full min-h-[22rem] w-full"
