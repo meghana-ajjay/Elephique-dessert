@@ -1,6 +1,6 @@
 import { Award, ChefHat, Star } from 'lucide-react';
 import SectionKicker from './SectionKicker.jsx';
-import chef from '../assets/chef.jpg';
+import chef from '../assets/chef.png';
 
 export default function ChefSection() {
   return (
@@ -28,7 +28,7 @@ export default function ChefSection() {
               <img
                 src={chef}
                 alt="Pastry Chef"
-                className="h-80 w-80 rounded-3xl object-cover"
+                className="h-64 w-64 sm:h-80 sm:w-80 rounded-3xl object-cover"
                 />
             </div>
 
@@ -91,9 +91,9 @@ export default function ChefSection() {
                     Dessert Innovation
                     </span>
                 </div>
-                <div className="mt-8 grid grid-cols-3 gap-4">
+                <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
                     <div className="rounded-xl border border-ivory/10 p-4 text-center">
-                        <p className="font-display text-3xl text-gold">4+</p>
+                        <p className="font-display text-2xl sm:text-3xl text-gold">4+</p>
                         <p className="text-sm text-ivory/60">Luxury Brands</p>
                     </div>
 
