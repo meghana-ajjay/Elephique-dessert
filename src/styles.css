@@ -36,9 +36,9 @@ textarea {
     @apply mx-auto max-w-7xl px-5 py-20 sm:py-24 lg:px-8 lg:py-28;
   }
 
-  .section-title {
-    @apply font-display text-4xl font-semibold leading-[1.05] text-cocoa sm:text-6xl;
-  }
+    .section-title {
+      @apply font-display text-[2rem] font-semibold leading-[1.15] text-cocoa sm:text-5xl lg:text-6xl;
+    }
 
   .nav-link {
     @apply text-sm font-semibold text-cocoa/70 transition hover:text-rose;
