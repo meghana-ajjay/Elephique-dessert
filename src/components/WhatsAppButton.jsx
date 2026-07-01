@@ -1,13 +1,23 @@
 import { IoLogoWhatsapp } from 'react-icons/io5';
+import ReactGA from 'react-ga4';
 
 export default function WhatsAppButton() {
   const whatsappNumber = '918095403379';
+
+  const handleWhatsappClick = () => {
+    ReactGA.event({
+      category: 'Contact',
+      action: 'WhatsApp Click',
+      label: 'Floating WhatsApp Button',
+    });
+  };
 
   return (
     <a
       href={`https://wa.me/${whatsappNumber}?text=Hello%20Elephique%2C%20I%27d%20like%20to%20enquire%20about%20a%20cake%20or%20dessert%20order.`}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={handleWhatsappClick}
       className="
         fixed bottom-5 right-5 z-50
         flex h-16 w-16 items-center justify-center

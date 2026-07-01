@@ -2,12 +2,10 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App.jsx';
 import './styles.css';
-import ReactGA from "./Analytics";
+import { initGA, trackPageView } from "./Analytics";
 
-ReactGA.send({
-  hitType: "pageview",
-  page: window.location.pathname,
-});
+initGA();
+trackPageView();
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
